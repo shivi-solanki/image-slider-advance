@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.text h1{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
+    
+}
+.text p{
+    text-shadow: 1px 1px  black;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 40px ;
+}
+.text span{
+            background: rgb(148, 54, 19);
+            height: 3px;
+            width: 250px;
+            position: absolute;
+            animation: line 3s linear infinite;
+}
+@keyframes line {
+    100%{
+           width: 380px;
+    }
+}
+.text span:hover{
+            width: 400px;
+            transition: 0.4s;
+}
+img{
+    border-radius: 10%;
+    height: 350px;
+    width: 500px;
+}
+.img{
+    animation: move 12s linear infinite;
+    transform: translateX(-200px);
+}
+@keyframes move {
+        10%{
+             transform: translateX(0px);
+        }
+        100%{
+             transform: translateX(0px);
+        }
+}
+.text{
+    animation: text-up 12s linear infinite ;
+    transform: translateY(200px);
+}
+@keyframes text-up {
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.banner1 .row, .banner2 .row,.banner3 .row,.banner4 .row{
+      margin: 150px 30px;  
+      justify-content: center;   
+      align-items: center;
+}
+.banner1 , .banner2 , .banner3 , .banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.banner2 .text p{
+    color: green;
+}
+.banner1 .text p{
+    color: blue;
+}
+.banner3 .text p{
+    color: rgb(252, 6, 157);
+}
+.banner4 .text p{
+    color: rgb(255, 81, 0);
+}
+
+.banner1{
+    background: url("../img/tex1.jpg") no-repeat center center/cover;
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    background-color: rgb(202, 247, 185);
+    background: url("../img/tex2.jpg") no-repeat center center/cover;
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    background: url("../img/tex3.jpg") no-repeat center center/cover;
+    background-color:rgb(248, 202, 202);
+    animation: slide3 12s linear infinite;
+     
+}
+.banner4{
+    background: url("../img/tex4.jpg") no-repeat center center/cover;
+    background-color: rgb(247, 227, 164);
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1 {
+        0%{
+                
+                visibility: visible;
+        }
+        25%{
+                visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+}
+@keyframes slide2 {
+        0%{
+                visibility:hidden;
+        }
+        25%{
+                visibility:hidden;
+        }
+        50%{
+            
+            visibility: visible;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: hidden;
+        }
+}
+@keyframes slide3 {
+        0% {
+                visibility: hidden;
+        }
+        25% {
+                visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: visible;
+        }
+        100%{
+            visibility: hidden;
+        }
+}
+@keyframes slide4 {
+        0%{
+                visibility: hidden;
+        }
+        25%{
+                visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+}
+.box1{
+    animation-delay: 0s;
+}
+.box2{
+    animation-delay: 3s;
+}
+.box3{
+    animation-delay: 6s;
+}
+.box4{
+    animation-delay: 9s;
+}
+.img-box1{
+    animation-delay: 0s;
+}
+.img-box2{
+    animation-delay: 3s;
+}
+.img-box3{
+    animation-delay: 6s;
+}
+.img-box4{
+    animation-delay: 9s;
+}
