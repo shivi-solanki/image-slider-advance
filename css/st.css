@@ -5,6 +5,9 @@ body{
     padding: 0;
     overflow: hidden;
 }
+.container{
+    width:80%;
+}
 .text h1{
     color: rgb(0, 0, 0);
     font-size: 60px;
